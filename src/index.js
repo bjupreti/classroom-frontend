@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import axe from 'react-axe';
+
+if (process.env.NODE_ENV === 'development') {
+  axe(React, ReactDOM, 1000);
+}
 
 ReactDOM.render(
   <React.StrictMode>
