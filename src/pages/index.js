@@ -1,6 +1,6 @@
-import { ClassDetail } from './classDetail';
-import { ClassList } from './classList';
+import { CourseDetail } from './courseDetail';
+import { CourseList } from './courseList';
 import { SignIn, SignUp } from './auth';
 import { NotFound } from './notFound';
 
-export { ClassDetail, ClassList, SignIn, SignUp, NotFound };
+export { CourseDetail, CourseList, SignIn, SignUp, NotFound };

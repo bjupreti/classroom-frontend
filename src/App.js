@@ -2,14 +2,14 @@ import React from 'react';
 import { Router } from '@reach/router';
 
 // import pages
-import { ClassDetail, ClassList, SignIn, NotFound } from './pages';
+import { CourseDetail, CourseList, SignIn, NotFound } from './pages';
 
 function App() {
   return (
     <Router>
       <SignIn path="/" />
-      <ClassList path="/classes" />
-      <ClassDetail path="/class/:id" />
+      <CourseList path="/courses" />
+      <CourseDetail path="/course/:id" />
       <NotFound default />
     </Router>
   );
