@@ -5,7 +5,7 @@ export default function CourseList() {
   return (
     <Container>
       <h2 className="courselist-title">CURRENT SEMESTER COURSES</h2>
-      <div className="row">
+      <div className="row bg-white">
         {[1, 2, 3, 4, 5].map((item) => (
           <div className="col- col-md-6 col-lg-4 col-xl-3 mb-4" key={item}>
             <div className="course-listing-card shadow-sm rounded">

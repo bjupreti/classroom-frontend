@@ -1,0 +1,38 @@
+.green-text {
+  color: #00a37d;
+}
+
+.pagination .pagination-breaker {
+  margin: 15px 10px;
+}
+
+.container-main {
+  display: flex;
+}
+
+.container-main .container-courses {
+  margin: 15px;
+}
+
+.container-main section:nth-of-type(1) {
+  flex-grow: 1;
+  margin-left: 0;
+}
+
+.container-main section:nth-of-type(2) {
+  flex-grow: 4;
+  margin-right: 0;
+}
+
+.file-container {
+  display: flex;
+  border: 2px solid #00a37d;
+  border-radius: 10px;
+  box-shadow: 3px 0px #00a37d;
+}
+
+.file-container i {
+  margin: auto 15px;
+  font-size: 26px;
+  color: #00a37d;
+}

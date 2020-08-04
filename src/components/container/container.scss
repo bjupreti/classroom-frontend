@@ -2,7 +2,7 @@ main.container-wrapper {
   background-color: $background;
   padding: 0 15px 15px;
   > div {
-    background: $white;
+    height: 1px;
     min-height: calc(100vh - 143px);
   }
 }

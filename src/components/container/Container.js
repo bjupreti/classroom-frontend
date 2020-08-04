@@ -10,7 +10,7 @@ export default function Container({ children }) {
       <NavBar />
 
       <main className="container-wrapper">
-        <div className="container-fluid shadow rounded">{children}</div>
+        <div className="container-fluid rounded">{children}</div>
       </main>
     </React.Fragment>
   );
