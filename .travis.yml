@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 12
+  - 'stable'
 branches:
   only:
     - master
@@ -14,3 +14,4 @@ deploy:
     master: frontend-classroom
   skip_cleanup: true
   project: ./build/
+  strategy: git
