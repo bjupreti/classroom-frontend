@@ -1,38 +1,39 @@
-.green-text {
-  color: #00a37d;
-}
-
-.pagination .pagination-breaker {
-  margin: 15px 10px;
-}
-
-.container-main {
-  display: flex;
-}
-
-.container-main .container-courses {
-  margin: 15px;
-}
-
-.container-main section:nth-of-type(1) {
-  flex-grow: 1;
-  margin-left: 0;
-}
-
-.container-main section:nth-of-type(2) {
-  flex-grow: 4;
-  margin-right: 0;
-}
-
 .file-container {
-  display: flex;
   border: 2px solid #00a37d;
   border-radius: 10px;
   box-shadow: 3px 0px #00a37d;
+  color: #00a37d;
+  font-weight: medium;
+
+  span {
+    margin-left: 15px;
+  }
 }
 
-.file-container i {
-  margin: auto 15px;
-  font-size: 26px;
-  color: #00a37d;
+.filelist-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.filedrop-text {
+  font-size: 0.8rem;
+  font-weight: lighter;
+  color: $text-color;
+  text-align: center;
+  &.small {
+    font-size: 0.7rem;
+  }
+}
+.dropzone-container {
+  border-width: 2px;
+  border-style: dotted;
+  border-color: $primary;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

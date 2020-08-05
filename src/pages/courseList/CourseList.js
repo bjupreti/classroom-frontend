@@ -1,5 +1,8 @@
 import React, { useEffect, useContext } from 'react';
 import { Spinner } from 'reactstrap';
+import { Link } from '@reach/router';
+import moment from 'moment';
+
 import { Container } from '../../components';
 import { AppContext } from '../../data';
 import { get } from '../../utils/api';
@@ -44,18 +47,22 @@ export default function CourseList() {
       <div className="row">
         {courses.map((item) => (
           <div className="col- col-md-6 col-lg-4 col-xl-3 mb-4" key={item._id}>
-            <div className="course-listing-card shadow-sm rounded">
-              <div className="course-header">
-                <h3>{item.subject}</h3>
+            <Link to={`/course/${item._id}`}>
+              <div className="course-listing-card shadow-sm rounded">
+                <div className="course-header">
+                  <h3>{item.subject}</h3>
+                </div>
+                <div className="course-detail">
+                  <h4>{item.courseName}</h4>
+                  <p className="mb-0">{item.programName}</p>
+                  <p className="mb-0">Semester: {item.semester}</p>
+                  <p className="mb-0">
+                    Start Date: {moment(item.startDate).format('MMM DD YYYY')}
+                  </p>
+                </div>
               </div>
-              <div className="course-detail">
-                <h4>{item.courseName}</h4>
-                <p className="mb-0">{item.programName}</p>
-                <p className="mb-0">Semester: {item.semester}</p>
-                <p className="mb-0">Start Date: {item.startDate}</p>
-              </div>
-            </div>
-            {/* Course listing ends here */}
+              {/* Course listing ends here */}
+            </Link>
           </div>
         ))}
       </div>
