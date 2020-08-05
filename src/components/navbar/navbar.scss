@@ -1,0 +1,10 @@
+nav.header {
+  ol {
+    background-color: $background;
+    margin-bottom: 0;
+  }
+  li a {
+    color: $primary-dark;
+    font-size: 1.25rem;
+  }
+}

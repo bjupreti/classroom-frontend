@@ -1,0 +1,20 @@
+header {
+  background-color: $background;
+
+  h1 span {
+    color: $primary-dark;
+    font-size: 1.5rem;
+  }
+
+  .logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+  }
+
+  .profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+  }
+}

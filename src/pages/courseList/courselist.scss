@@ -1,0 +1,39 @@
+.courselist-title {
+  font-size: 1.3rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.course-listing-card {
+  color: $text-color;
+  cursor: pointer;
+
+  .course-header {
+    background: #00a09e;
+    clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0% 75%);
+    padding: 50px 5px;
+
+    h3 {
+      color: $white;
+      line-height: 2rem;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+      font-size: 1.5rem;
+      text-align: center;
+      white-space: nowrap;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .course-detail {
+    padding: 12px;
+
+    h4 {
+      margin-top: 0;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+}
