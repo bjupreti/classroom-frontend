@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Hosted on Heroku:
+https://frontend-classroom.herokuapp.com
+
 ## Getting Started
 
 1. Make sure you have installed node and yarn to run the project.
@@ -42,4 +45,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### Deployment
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
 
