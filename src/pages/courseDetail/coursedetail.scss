@@ -1,14 +1,14 @@
-.file-container {
-  border: 2px solid #00a37d;
-  border-radius: 10px;
-  box-shadow: 3px 0px #00a37d;
-  color: #00a37d;
-  font-weight: medium;
+// .file-container {
+//   border: 2px solid #00a37d;
+//   border-radius: 10px;
+//   box-shadow: 3px 0px #00a37d;
+//   color: #00a37d;
+//   font-weight: medium;
 
-  span {
-    margin-left: 15px;
-  }
-}
+//   span {
+//     margin-left: 15px;
+//   }
+// }
 
 .filelist-title {
   font-size: 1.1rem;
@@ -17,23 +17,34 @@
   margin-bottom: 0;
 }
 
+.table-heading-row {
+  border-bottom: 2px solid #dee2e6;
+}
+
 .filedrop-text {
-  font-size: 0.8rem;
-  font-weight: lighter;
+  font-size: 1rem;
   color: $text-color;
   text-align: center;
-  &.small {
-    font-size: 0.7rem;
+
+  span {
+    color: $primary;
+    font-weight: bold;
   }
 }
 .dropzone-container {
-  border-width: 2px;
-  border-style: dotted;
-  border-color: $primary;
-  padding: 1rem 2rem;
-  margin-bottom: 1rem;
+  &,
+  &:focus,
+  &:active {
+    border-width: 2px;
+    border-style: dotted;
+    border-color: $primary;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    outline: none;
+  }
 
   &:hover {
-    cursor: pointer;
+    border-color: $primary-dark;
+    cursor: copy;
   }
 }

@@ -5,17 +5,17 @@ import { getReadableSize } from '../../../utils/helpers';
 import { AppContext } from '../../../data';
 import UploadModal from './UploadModal';
 
-export default function FileList() {
+export default function FileList({ id }) {
   const [{ courseDetails }] = useContext(AppContext);
 
   return (
     <section>
-      <div className="d-flex justify-content-between my-2 align-items-center">
+      <div className="d-flex justify-content-between py-3 align-items-center">
         <h3 className="filelist-title">FILES AND FOLDERS</h3>
-        <UploadModal />
+        <UploadModal id={id} />
       </div>
-      <Table>
-        <thead>
+      <Table borderless>
+        <thead className="table-heading-row">
           <tr>
             <th>NAME</th>
             <th>DATE ADDED</th>
@@ -26,7 +26,7 @@ export default function FileList() {
         <tbody>
           {courseDetails.files.map((item) => (
             <tr key={item._id}>
-              <td>{item.fileName}</td>
+              <td>{item.originalName}</td>
               <td>{moment(item.updatedAt).format('MMM DD, YYYY')}</td>
               <td>{moment(item.updatedAt).format('MMM DD, YYYY')}</td>
               <td>{getReadableSize(item.size)}</td>

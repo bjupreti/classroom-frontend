@@ -42,13 +42,13 @@ function CourseDetail({ id, ...rest }) {
   console.warn(courseDetails);
   return (
     <Container>
-      <div className="pt-2">
+      {/* <div className="pt-2">
         <p className="file-container">
-          {/* <i className="far fa-file-alt"></i> */}
+          <i className="far fa-file-alt"></i>
           <span>Files</span>
         </p>
-      </div>
-      <FileList />
+      </div> */}
+      <FileList id={id} />
     </Container>
   );
 }
