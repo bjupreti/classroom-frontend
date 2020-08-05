@@ -13,3 +13,4 @@ deploy:
   app:
     master: frontend-classroom
   skip_cleanup: true
+  project: ./build/
