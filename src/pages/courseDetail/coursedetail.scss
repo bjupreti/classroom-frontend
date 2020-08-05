@@ -1,0 +1,50 @@
+// .file-container {
+//   border: 2px solid #00a37d;
+//   border-radius: 10px;
+//   box-shadow: 3px 0px #00a37d;
+//   color: #00a37d;
+//   font-weight: medium;
+
+//   span {
+//     margin-left: 15px;
+//   }
+// }
+
+.filelist-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.table-heading-row {
+  border-bottom: 2px solid #dee2e6;
+}
+
+.filedrop-text {
+  font-size: 1rem;
+  color: $text-color;
+  text-align: center;
+
+  span {
+    color: $primary;
+    font-weight: bold;
+  }
+}
+.dropzone-container {
+  &,
+  &:focus,
+  &:active {
+    border-width: 2px;
+    border-style: dotted;
+    border-color: $primary;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+
+  &:hover {
+    border-color: $primary-dark;
+    cursor: copy;
+  }
+}

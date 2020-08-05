@@ -1,0 +1,30 @@
+.app-button {
+  &,
+  &:focus,
+  &:active {
+    background-color: $primary;
+    box-shadow: none;
+    border: none;
+  }
+  &:hover {
+    background-color: $primary;
+    opacity: 0.8;
+  }
+}
+
+.app-button-no-bg {
+  &,
+  &:focus,
+  &:active {
+    background-color: transparent !important;
+    border: none !important;
+    color: $primary;
+    font-weight: bold;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  &:hover {
+    background-color: transparent;
+    color: $primary-dark;
+  }
+}
