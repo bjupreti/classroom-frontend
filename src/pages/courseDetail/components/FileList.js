@@ -36,7 +36,7 @@ export default function FileList({ id }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Anchor
+                  &nbsp;&nbsp;&#10515;&nbsp;
                 </a>
               </td>
               <td>{moment(item.updatedAt).format('MMM DD, YYYY')}</td>
