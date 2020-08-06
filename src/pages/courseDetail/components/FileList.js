@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
-import { Table, Button } from 'reactstrap';
+import { Table } from 'reactstrap';
 import moment from 'moment';
+
 import { getReadableSize } from '../../../utils/helpers';
 import { AppContext } from '../../../data';
 import UploadModal from './UploadModal';
+import config from '../../../utils/config';
 
 export default function FileList({ id }) {
   const [{ courseDetails }] = useContext(AppContext);
@@ -26,7 +28,17 @@ export default function FileList({ id }) {
         <tbody>
           {courseDetails.files.map((item) => (
             <tr key={item._id}>
-              <td>{item.originalName}</td>
+              <td>
+                {item.originalName}
+                {/* TODO: change the filename to originalname */}
+                <a
+                  href={`${config.baseURL}course/${id}/file/${item._id}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Anchor
+                </a>
+              </td>
               <td>{moment(item.updatedAt).format('MMM DD, YYYY')}</td>
               <td>{moment(item.updatedAt).format('MMM DD, YYYY')}</td>
               <td>{getReadableSize(item.size)}</td>
