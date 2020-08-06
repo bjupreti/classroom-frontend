@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import axe from 'react-axe';
 import './styles/index.scss';
 
 if (process.env.NODE_ENV === 'development') {
+  const axe = require('react-axe');
   axe(React, ReactDOM, 1000);
 }
 
