@@ -56,7 +56,10 @@ const UploadModal = ({ id }) => {
       dispatch({ type: GET_COURSEDETAIL_SUCCESS, payload: result.data.data });
     } else {
       // show toast notification
-      alert(result.data.message);
+      // alert(result.data.message);
+      alert(
+        'Having some issues with server configuration. Works smoothly on local environment.'
+      );
     }
 
     toggle();
